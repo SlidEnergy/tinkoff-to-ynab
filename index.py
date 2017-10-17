@@ -81,6 +81,6 @@ with open(destPath, 'w', newline='',encoding="utf-8") as dest:
             #     continue
 
             if row["Статус"] == "OK":
-                writer.writerow([date.strftime("%d/%m/%Y"),"",category,description + '(' + row["Категория"] + ')',outflow,inflow])
+                writer.writerow([date.strftime("%d/%m/%Y"),"",category,description + ' (' + row["Категория"] + ')',outflow,inflow])
 
 print ("Done")
